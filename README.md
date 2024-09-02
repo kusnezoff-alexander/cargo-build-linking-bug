@@ -1,4 +1,4 @@
-This repo exhibits unexpected behavior by cargo.
+This repo shows an example of unexpected behavior by `cargo build`.
 
 The success of `cargo build` seems to depend on the existence of `lib.rs` even if the binary is built.
 Building packages which offer both a library and binary could suffer from this potential bug. This bug has been only been reproduced so far for linking against a library via
