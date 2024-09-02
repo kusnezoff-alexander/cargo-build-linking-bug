@@ -1,4 +1,4 @@
-This repo shows an example of unexpected behavior by `cargo build`.
+This repo shows an example of unexpected behavior by `cargo build`. (see [this issue](https://github.com/rust-lang/cargo/issues/14486))
 
 The success of linking C-libraries during `cargo build` seems to depend on the existence of `lib.rs` even if only the binary is built.
 Building packages which offer both a library and binary could suffer from this potential bug. This bug has been only been reproduced so far for linking against a library via
