@@ -18,3 +18,4 @@ Observed behavior:
 1. `cd libs && make all`
 2. `cd linking-does-work && cargo build` - should exit successfully
 3. `cd linking-doesnt-work && cargo build` - should throw an error that extern function-symbol isn't defined (although the only difference to the previous case is the existence of `lib.rs`)
+    - interestling though, it does work if `export RUSTFLAGS="-L <absolute-path-to-this-dir>/libs/ -l mylib"` is set
