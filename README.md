@@ -9,5 +9,5 @@ inside `build.rs`.
 **Exptected behavior**: The existence of a file called `lib.rs` should have no effect on the linking during `cargo build`:
 
 **Observed behavior**:
-1. Without the existence of `lib.rs`: Linking to custom C-library does work (see `./linking-does-work` for working example)
-2. Withthe existence of `lib.rs`: Linking to custom C-library does not work (see `./linking-doesnt-work` for working example)
+1. Without the existence of `lib.rs`: Linking to custom C-library does work (see `./linking-without-lib-works` for working example)
+2. Withthe existence of `lib.rs`: Linking to custom C-library does not work (see `./linking-with-lib-doesnt` for working example)
